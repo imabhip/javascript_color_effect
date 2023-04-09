@@ -1,0 +1,58 @@
+ <html>
+<head>
+<title> color effect</title>
+<style>
+.myDiv {
+  border: 1px outset black;
+  background-color: white;    
+  text-align: right;
+}
+</style>
+</head>
+<body>
+	<table width="60%" align="center" border="0" cellpadding="5" cellspacing="0">
+		<tr>
+			<td width="30%">
+			Select Border Colour<br>
+			<select name="brd_clr" id="brd_clr" style="width:100%" onChange="document.getElementById('box1').style.borderColor=document.getElementById('brd_clr').value;">
+				<option value="">Colour</option>
+				<option value="Blue">Blue</option>
+				<option value="Red">Red</option>
+				<option value="Green">Green</option>
+				<option value="Yellow">Yellow</option>
+			</select>
+			<br><br>
+			Select Fill Colour<br>
+			<select name="fil_clr" id="fil_clr" style="width:100%" onChange="document.getElementById('box1').style.backgroundColor=document.getElementById('fil_clr').value;">
+				<option value="">Colour</option>
+				<option value="Blue">Blue</option>
+				<option value="Red">Red</option>
+				<option value="Green">Green</option>
+				<option value="Yellow">Yellow</option>
+			</select>
+			<br><br>
+			Select Font Size<br>
+			<select name="fnt_size" id="fnt_size" style="width:100%" onChange="document.getElementById('box2').style.fontSize=document.getElementById('fnt_size').value;">
+				<option value="">Size</option>
+				<option value="5px">5px</option>
+				<option value="10px">10px</option>
+				<option value="30px">30px</option>
+				<option value="50px">50px</option>
+				<option value="70px">70px</option>
+				<option value="100px">100px</option>
+			</select>
+			</td>
+			<td width="70%">
+				<div id="box1" style="width:100%;height:150px;border:2px solid #000;background-color:white">
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<div id="box2" style="width:100%;border:2px solid #000;font-size:12px;font-family:arial;text-align:center;padding:20px 0px">
+				Sample Text</div>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
